@@ -1,3 +1,10 @@
-<p>
-  two works!
-</p>
+<input *ngIf='wyswietl' [(ngModel)]='imie' type='text'/>
+  <button [ngStyle]="{'background-color':'blue'}" (click)='wyslij()'>Wyślij</button>
+
+  <div *ngFor='let osoba of osoby; let i=index;'>
+      <span [ngClass]='{"red":i == 1}'>{{osoba.imie}} ma lat {{osoba.wiek}}</span>
+  </div>
+  <h2>
+    {{urodzony | date:"short"}}
+  </h2>
+  <h2>{{ kasa | currency:"PLN"}}</h2>

@@ -5,7 +5,7 @@ import { TwoComponent } from './two/two.component';
 
 const routes: Routes = [
   {path: 'one', component:OneComponent},
-  {path: 'two', component:TwoComponent},
+  {path: 'two/:kasa', component:TwoComponent},
 ];
 
 @NgModule({
