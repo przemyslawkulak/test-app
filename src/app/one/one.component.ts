@@ -13,8 +13,14 @@ export class OneComponent implements OnInit {
       nazwisko: new FormControl(''),
   })
 
+  klik: Boolean=false;
+
   wyslij(){
     console.log(this.naszForm.value);
+  }
+
+  klikniety(noweDane: boolean){
+    this.klik=noweDane;
   }
 
   constructor() { }

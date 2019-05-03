@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { OsobyService } from './osoby.service';
 import { AppRoutingModule } from './app-routing.module';
 import { OneComponent } from './one/one.component';
-import { TwoComponent } from './two/two.component'
+import { TwoComponent } from './two/two.component';
+import { ChildComponent } from './child/child.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     OneComponent,
     TwoComponent,
+    ChildComponent,
     
   ],
   imports: [

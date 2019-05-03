@@ -1,4 +1,4 @@
-<p>Podaj swoje dane</p>
+<p>Kliknięty {{ klik }}</p>
 
 <form [formGroup]='naszForm'(ngSubmit)="wyslij()">
 <label>Imie</label>
@@ -8,4 +8,7 @@
 <input type='text' formControlName='nazwisko'/>
 <button type="submit">Wyslij</button>
 </form>
-{{naszForm.value | json}}
+<app-child [imie]="naszForm.value.imie"
+(zmieniony)='klikniety($event)'>
+
+</app-child>
