@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ imie | uppercase}}!
+  </h1>
+  <input *ngIf='wyswietl' [(ngModel)]='imie' type='text'/>
+  <button [ngStyle]="{'background-color':'blue'}" (click)='wyslij()'>Wyślij</button>
+
+  <div *ngFor='let osoba of osoby; let i=index;'>
+      <span [ngClass]='{"red":i == 1}'>{{osoba.imie}} ma lat {{osoba.wiek}}</span>
+  </div>
+  <h2>
+    {{urodzony | date:"short"}}
+  </h2>
+  <h2>{{ kasa | currency:"PLN"}}</h2>
+</div>
+
+
