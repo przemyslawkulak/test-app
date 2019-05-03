@@ -3,7 +3,7 @@
   <h1>
     Welcome to {{ imie | uppercase}}!
   </h1>
-  <input *ngIf='wyswietl' [(ngModel)]='imie' type='text'/>
+  <!-- <input *ngIf='wyswietl' [(ngModel)]='imie' type='text'/>
   <button [ngStyle]="{'background-color':'blue'}" (click)='wyslij()'>Wyślij</button>
 
   <div *ngFor='let osoba of osoby; let i=index;'>
@@ -12,7 +12,11 @@
   <h2>
     {{urodzony | date:"short"}}
   </h2>
-  <h2>{{ kasa | currency:"PLN"}}</h2>
+  <h2>{{ kasa | currency:"PLN"}}</h2> -->
+  <nav>
+    <a routerLink="one">One</a><br>
+    <a routerLink="two">Two</a><br>
+  </nav>
 </div>
-
+<router-outlet></router-outlet>
 
