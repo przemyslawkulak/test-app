@@ -43,7 +43,7 @@ export class TwoComponent implements OnInit {
   }
 
 
-  wyslij = function(event) {
+  wyslij = function() {
     this.location.back();
   };
 
